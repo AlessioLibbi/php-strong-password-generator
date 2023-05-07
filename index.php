@@ -1,4 +1,8 @@
 <?php include_once __DIR__ . "/function.php"; ?>
+<?php session_start();
+$_SESSION["password"] = $password;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,6 +63,8 @@
                     </div>
             </form>
         </div>
+        <a href="logout.php">Logout</a>
+        <a href="generated.php"> Vai alla tua password</a>
     </div>
     </div>
 
